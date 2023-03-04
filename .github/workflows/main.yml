@@ -27,7 +27,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          | node-verion: 16
+            node-verion: 16
 
       - name: Install all dependencies
         run: |
