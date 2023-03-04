@@ -5,7 +5,7 @@
     "main":"index.js",
     "scripts":{
         "test":"cypress open",
-        "file":"cypress run --browser chrome --reporter cypress-multi-reporters --reporter-options configFile=cypress.config.js --record --key 85e4b119-f5cf-482f-af78-db54947941b8 --spec"},
+        "file":"cypress run --browser chrome --reporter cypress-multi-reporters --reporter-options configFile=jsconfig.json --record --key 85e4b119-f5cf-482f-af78-db54947941b8 --spec"},
         "keywords":["cypress","automation","testing"],
         "author":"Sebastian Avila",
         "license":"ISC",
