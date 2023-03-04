@@ -1,0 +1,8 @@
+node_modules/
+downloads/
+package-lock.json
+screenshots/
+videos/
+reports/
+mochawesome-reports/
+.git/

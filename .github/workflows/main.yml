@@ -7,10 +7,9 @@ on:
     branches:
 
       - 'GX-9114/**'
+      - TestSebas
 
   workflow_dispatch:
-
-
 
 
 jobs:
@@ -23,22 +22,22 @@ jobs:
 
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
-
-
-
       - name: Check out repository code
-
         uses: actions/checkout@v2
 
-
-
-
-      - name: run cypress tests with chrome
-
-        uses: cypress-io/github-action@v4
-
-        timeout-minutes: 10
-
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
+          | node-verion: 16
 
+      - name: Install all dependencies
+        run: |
+          npm install
+          npm list
+        
+      - name: run cypress tests with chrome
+        uses: cypress-io/github-action@v4
+        with:
           browser: chrome
+          command: |
+            npm run file cypress/e2e/upex-technical-test/GX-9114.cy.js
