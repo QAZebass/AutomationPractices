@@ -3,7 +3,7 @@ let pricebefore;
 let priceafter;
 
 Cypress.Commands.add('TC1',()=>{
-    
+
     plp.AddtoCartbutton().invoke('text').then(price=>{
         pricebefore= price.replace(/[^0-9]/g, '')
     
@@ -20,7 +20,6 @@ Cypress.Commands.add('TC9',()=>{
     plp.BlackBag().click({force:true})
     plp.EmailMe().click()
 })
-
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
