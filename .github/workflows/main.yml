@@ -5,7 +5,7 @@ on:
   push:
 
     branches:
-      - 'GX-9114/**'
+      - GX-9114-✅-challenge-technical-exercise-qa-automation-engineer-in-cypress
       - TestSebas
 
   workflow_dispatch:
