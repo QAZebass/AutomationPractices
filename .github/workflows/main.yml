@@ -6,7 +6,6 @@ on:
 
     branches:
       - GX-9114-UpexTechnical
-      - TestSebas
 
   workflow_dispatch:
 

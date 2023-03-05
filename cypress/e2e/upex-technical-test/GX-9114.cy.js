@@ -6,7 +6,7 @@ describe('GX-9114 | ✅[Challenge] Technical Exercise - QA Automation Engineer i
     beforeEach('Precondition',()=>{
         cy.visit('/')
     })
-    it.only('GX-9115 |TC8 : Validate that the price in the “Add to cart” button changes when the user changes de color of the product.',()=>{
+    it('GX-9115 |TC8 : Validate that the price in the “Add to cart” button changes when the user changes de color of the product.',()=>{
 
     plp.AddtoCartbutton().should('exist')
     cy.TC1()
@@ -14,11 +14,12 @@ describe('GX-9114 | ✅[Challenge] Technical Exercise - QA Automation Engineer i
         const {price1, price2}= TC1;
         expect(price1).to.not.equal(price2)
     })
+})
     it('GX-9115 | TC9:  Validate that the “email me” button enables the modal when clicked on.',()=>{
         cy.TC9()
         plp.Modal().should('exist')
         })
-    })
+
 
     it('GX-9115 | TC10: Validate that the information can be hidden when clicking on “Why we love it”',()=>{
 
