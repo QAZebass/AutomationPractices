@@ -5,7 +5,7 @@ on:
   push:
 
     branches:
-      - GX-9114-✅-challenge-technical-exercise-qa-automation-engineer-in-cypress
+      - GX-9114-UpexTechnical
       - TestSebas
 
   workflow_dispatch:
