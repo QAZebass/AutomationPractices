@@ -6,7 +6,7 @@ describe('GX-9114 | ✅[Challenge] Technical Exercise - QA Automation Engineer i
     beforeEach('Precondition',()=>{
         cy.visit('/')
     })
-    xit('GX-9115 | TC2:  Validate that the user can add more than one of the same product through the counter next to the “add” button.',()=>{
+    it('GX-9115 | TC2:  Validate that the user can add more than one of the same product through the counter next to the “add” button.',()=>{
 
         cy.TC1()
         cy.get('@countercart').then((TC1)=>{
