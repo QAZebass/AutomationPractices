@@ -6,7 +6,7 @@ describe('GX-9114 | ✅[Challenge] Technical Exercise - QA Automation Engineer i
     beforeEach('Precondition',()=>{
         cy.visit('/')
     })
-    it.only('GX-9115 |TC8 :  Validate that the price in the “Add to cart” button changes when the user changes de color of the product.',()=>{
+    it.only('GX-9115 |TC8 : Validate that the price in the “Add to cart” button changes when the user changes de color of the product.',()=>{
 
     plp.AddtoCartbutton().should('exist')
     cy.TC1()
