@@ -18,7 +18,7 @@ describe('GX-9114 | ✅[Challenge] Technical Exercise - QA Automation Engineer i
     it('GX-9115 | TC9:  Validate that the “email me” button enables the modal when clicked on.',()=>{
         cy.TC9()
         plp.Modal().should('exist')
-        })
+    })
 
 
     it('GX-9115 | TC10: Validate that the information can be hidden when clicking on “Why we love it”',()=>{
