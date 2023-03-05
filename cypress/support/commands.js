@@ -1,4 +1,3 @@
-import { cartpage } from "./Pages/CartPage";
 import { plp } from "./Pages/PLP";
 let pricebefore;
 let priceafter;
