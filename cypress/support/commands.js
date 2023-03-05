@@ -1,37 +1,21 @@
 import { cartpage } from "./Pages/CartPage";
 import { plp } from "./Pages/PLP";
-let price;
-let counter, counter2;
-let total;
-let pricenum;
+let pricebefore;
+let priceafter;
 
 Cypress.Commands.add('TC1',()=>{
     
-    plp.AddtoCartbutton().invoke('text').then(info=>{
-        price= info.replace(/\D/g, "")
-        pricenum = parseInt(price);
+    plp.AddtoCartbutton().invoke('text').then(price=>{
+        pricebefore= price.replace(/[^0-9]/g, '')
     
-    let number= Cypress._.random(2,6)
-    
-    for (let i=0; i<=number; i++){
-        plp.AdditionProduct().click({force:true})}
-
-    plp.Counter().invoke('text').then(number=>{
-        counter= parseInt(number)
-    
-    plp.AddtoCartbutton().click({force:true})
-    cy.log(pricenum, counter)
-    total= pricenum*counter
-    const totalexport={total: total}
-
-    cartpage.Counter().invoke('text').then(number=>{
-        counter2= parseInt(number)
-    const counterexport= {counter2: counter2}
-    cy.wrap(counterexport).as('countercart')
-    cy.wrap(totalexport).as('total')
+    plp.ScouttanButton().click({force:true})
+    plp.AddtoCartbutton().invoke('text').then(price2=>{
+        priceafter= price2.replace(/[^0-9]/g, '')
+    cy.log(pricebefore, priceafter)
+    const prices= {price1: pricebefore, price2: priceafter}; 
+    cy.wrap(prices).as('pricesinfo')
     })
     })
-})
 })
 Cypress.Commands.add('TC9',()=>{
     plp.BlackBag().click({force:true})

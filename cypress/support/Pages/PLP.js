@@ -1,9 +1,7 @@
 class PLP{
     elements={
             addtocartbutton:()=> cy.get('[class="nyla--add-to-cart css-14e98ui eb00qtb1"]'),
-            additionproduct:()=> cy.get('[src="/_cdn/xnU7WKBsT2WPhsJdEPnQ/__N__2__N__.svg"]').first(),
-            gotocart:()=> cy.get('[class="css-9iujih e1u0lm2u0"]'),
-            counternumber:()=> cy.get('[class="e1axzrep0 css-lozh3q e1nqke5h3"]'),
+            scouttanbutton:()=>  cy.get('[data-nyla="option_scout-tan"]').contains('Scout Tan'),
             blackbag:()=> cy.get('[data-nyla="option_derby-black"]').find("span").contains("Derby Black"),
             emailme:()=> cy.get('[alttype="ADD_TO_CART_OUT_OF_STOCK"]'),
             modal:()=> cy.get('[data-nyla="modal-out"]'),
@@ -14,17 +12,8 @@ class PLP{
     AddtoCartbutton(){
         return this.elements.addtocartbutton()
     }
-    AdditionProduct(){
-        return this.elements.additionproduct()
-    }
-    Gotocart(){
-        return this.elements.gotocart()
-    }
-    Counter(){
-        return this.elements.counternumber()
-    }
-    Total(){
-        return this.elements.total()
+    ScouttanButton(){
+        return this.elements.scouttanbutton()
     }
     BlackBag(){
         return this.elements.blackbag()
