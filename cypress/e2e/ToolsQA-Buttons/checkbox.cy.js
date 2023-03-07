@@ -9,7 +9,6 @@ describe('Working with checkboxes',()=>{
         cy.Checkbox(number)
     })
 })
-
 Cypress.on('uncaught:exception', (err, runnable) => {
     return false
     })
