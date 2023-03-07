@@ -7,7 +7,6 @@ describe('Working with checkboxes',()=>{
 
         cy.get('[class*="rct-collapse-btn"]').click();
         cy.Checkbox(number)
-    
     })
 })
 

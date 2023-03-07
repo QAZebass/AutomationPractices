@@ -3,7 +3,6 @@ let pricebefore;
 let priceafter;
 
 Cypress.Commands.add('TC1',()=>{
-
     plp.AddtoCartbutton().invoke('text').then(price=>{
         pricebefore= price.replace(/[^0-9]/g, '')
     
