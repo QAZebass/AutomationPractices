@@ -20,7 +20,6 @@ describe('GX-9114 | ✅[Challenge] Technical Exercise - QA Automation Engineer i
         plp.Modal().should('exist')
     })
 
-
     it('GX-9115 | TC10: Validate that the information can be hidden when clicking on “Why we love it”',()=>{
 
         plp.WhyweloveText().should('exist');
