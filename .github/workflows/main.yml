@@ -36,4 +36,4 @@ jobs:
         with:
           browser: chrome
           command: |
-            npm run file cypress/e2e/ToolsQA/Buttons/radiobuttons.cy.js
+            npm run file cypress/e2e/ToolsQA/radiobuttons.cy.js
