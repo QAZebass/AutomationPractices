@@ -22,6 +22,7 @@ describe('Working with checkboxes',()=>{
         cy.get('[class="rct-checkbox"]').eq(2)
     })
 })
+
 Cypress.on('uncaught:exception', (err, runnable) => {
     return false
     })
