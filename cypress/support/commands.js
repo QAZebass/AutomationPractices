@@ -20,6 +20,27 @@ Cypress.Commands.add('TC9',()=>{
     plp.EmailMe().click()
 })
 
+Cypress.Commands.add('Checkbox',(number)=>{
+    
+    cy.get('[class*="rct-collapse-btn"]').eq(number).click();
+
+    if(number===1){
+        cy.get('[class="rct-checkbox"]').eq(Cypress._.random(1,3)).click()
+    }
+    else if(number===2){
+        let number2= Cypress._.random(3,4)
+        cy.get('[class*="rct-collapse-btn"]').eq(number2).click()
+        if(number2===3){
+            cy.get('[class="rct-checkbox"]').eq(Cypress._.random(4,6)).click()
+        }
+        else if(number2===4){
+            cy.get('[class="rct-checkbox"]').eq(Cypress._.random(5,8)).click()
+        }
+    }
+    else if(number===3){
+        cy.get('[class="rct-checkbox"]').eq(Cypress._.random(4,5)).click()
+    }
+})
 
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
