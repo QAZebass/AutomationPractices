@@ -20,7 +20,6 @@ Cypress.Commands.add('TC9',()=>{
     plp.EmailMe().click()
 })
 
-
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
