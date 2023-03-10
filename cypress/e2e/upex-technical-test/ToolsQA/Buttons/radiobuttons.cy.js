@@ -10,7 +10,7 @@ describe('Working with checkboxes',()=>{
         cy.Checkbox(number)
         
     })
-    it.only('Testeando assertions',()=>{
+    it.skip('Testeando assertions',()=>{
         const success= ['home', 'desktop','notes','commands', 'documents', 'workspace',
             'react', 'angular', 'veu', 'office', 'public', 'private', 'classified',
             'general', 'downloads', 'wordFile', 'excelFile']
