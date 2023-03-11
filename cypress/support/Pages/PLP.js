@@ -1,7 +1,7 @@
 class PLP{
     elements={
-            addtocartbutton:()=> cy.get('[class="nyla--add-to-cart css-14e98ui eb00qtb1"]'),
-            scouttanbutton:()=>  cy.get('[data-nyla="option_scout-tan"]').contains('Scout Tan'),
+            addtocartbutton:()=> cy.get('[class^="nyla--add-to-cart"]'),
+            scouttanbutton:()=>  cy.get('[data-nyla="option_scout-tan"]'),
             blackbag:()=> cy.get('[data-nyla="option_derby-black"]').find("span").contains("Derby Black"),
             emailme:()=> cy.get('[alttype="ADD_TO_CART_OUT_OF_STOCK"]'),
             modal:()=> cy.get('[data-nyla="modal-out"]'),
